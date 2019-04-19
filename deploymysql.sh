@@ -26,3 +26,6 @@ cp -f /usr/local/mysqld/my.cnf /etc/my.cnf
 cp -f /usr/local/mysqld/mysql/support-files/mysql.server /etc/init.d/mysqld
 chkconfig --add mysqld
 chkconfig mysqld on
+
+ln -s /usr/local/mysqld/tmp/mysql.sock /tmp/mysql.sock
+cp -f /usr/local/mysqld/mysql/support-files/mysql.server /usr/bin/mysql.service
